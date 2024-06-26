@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import maintenanceSvg from "./assets/maintenance.svg";
+import logo from "./assets/pbt-nav-logo.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="header">
+        <img src={logo} alt="" />
+      </div>
+      <div className="container">
+        <div>
+          <p className="title">We Are Upgrading!</p>
+          <p className="desc">
+            Our site is under maintenance as we're preparing to serve you better
+          </p>
+        </div>
+        <img className="img" src={maintenanceSvg} alt="" />
+      </div>
     </div>
   );
 }
